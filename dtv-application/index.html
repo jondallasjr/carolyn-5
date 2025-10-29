@@ -1,0 +1,723 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>DTV Application Document Compilation</title><style>/* Global CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+li {
+  margin: 8px 0;
+}
+
+p {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.site-header {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  padding: 30px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-brand {
+  text-align: center;
+}
+
+.site-title {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.site-subtitle {
+  font-size: 1rem;
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+/* Navigation Styles */
+.site-nav {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.nav-link {
+  display: block;
+  padding: 12px 16px;
+  color: #333;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+  border-bottom-color: #007bff;
+}
+
+.nav-link.active {
+  color: #007bff;
+  border-bottom-color: #007bff;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  margin-top: 60px;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.footer-content p {
+  margin: 8px 0;
+}
+
+.footer-note {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* Container utility */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 1.5rem;
+  }
+
+  .site-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-link {
+    border-bottom: 1px solid #dee2e6;
+    border-left: 3px solid transparent;
+    padding: 12px 20px;
+  }
+
+  .nav-link.active {
+    border-left-color: #007bff;
+    border-bottom-color: #dee2e6;
+  }
+}
+/* DTV Application Document Compilation - Page CSS */
+.dtv-application-page {
+  padding: 40px 0;
+}
+
+.page-intro {
+  margin-bottom: 40px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 20px;
+}
+
+.page-intro h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.document-sections {
+  margin-bottom: 40px;
+}
+
+.doc-section {
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee;
+}
+
+.doc-section:last-child {
+  border-bottom: none;
+}
+
+.doc-section h2 {
+  font-size: 1.4rem;
+  color: #007bff;
+  margin-bottom: 12px;
+}
+
+.doc-section p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checklist li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.checklist li:before {
+  content: "□";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.sub-list {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+}
+
+.sub-list li {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.assembly-order {
+  padding-left: 25px;
+}
+
+.assembly-order li {
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.quality-checks {
+  list-style: none;
+  padding-left: 0;
+}
+
+.quality-checks li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.quality-checks li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.note-box {
+  background-color: #e7f3ff;
+  border-left: 4px solid #007bff;
+  padding: 15px 15px 15px 20px;
+  margin-top: 15px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #0056b3;
+}
+
+.note-box strong {
+  color: #0056b3;
+}
+
+.warning-box {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 15px 15px 15px 20px;
+  margin-top: 15px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #856404;
+}
+
+.warning-box strong {
+  color: #856404;
+}
+
+.timeline-box {
+  background-color: #f0f8ff;
+  border-left: 4px solid #17a2b8;
+  padding: 15px 15px 15px 20px;
+  margin-top: 15px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #004085;
+}
+
+.timeline-box strong {
+  color: #004085;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.timeline-box ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.timeline-box li {
+  color: #004085;
+  margin-bottom: 6px;
+}
+
+.next-steps {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+
+.next-steps h2 {
+  font-size: 1.3rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.next-steps .checklist {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .page-intro h1 {
+    font-size: 1.5rem;
+  }
+
+  .doc-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .note-box,
+  .warning-box,
+  .timeline-box {
+    font-size: 0.9rem;
+    padding: 12px 12px 12px 15px;
+  }
+}.dtv-application-page {
+  padding: 40px 0;
+}
+
+.page-intro {
+  margin-bottom: 40px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 20px;
+}
+
+.page-intro h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.document-sections {
+  margin-bottom: 40px;
+}
+
+.doc-section {
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee;
+}
+
+.doc-section:last-child {
+  border-bottom: none;
+}
+
+.doc-section h2 {
+  font-size: 1.4rem;
+  color: #007bff;
+  margin-bottom: 12px;
+}
+
+.doc-section p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checklist li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.checklist li:before {
+  content: "□";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.sub-list {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+}
+
+.sub-list li {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.assembly-order {
+  padding-left: 25px;
+}
+
+.assembly-order li {
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.quality-checks {
+  list-style: none;
+  padding-left: 0;
+}
+
+.quality-checks li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.quality-checks li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.note-box {
+  background-color: #e7f3ff;
+  border-left: 4px solid #007bff;
+  padding: 15px 15px 15px 20px;
+  margin-top: 15px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #0056b3;
+}
+
+.note-box strong {
+  color: #0056b3;
+}
+
+.warning-box {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 15px 15px 15px 20px;
+  margin-top: 15px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #856404;
+}
+
+.warning-box strong {
+  color: #856404;
+}
+
+.timeline-box {
+  background-color: #f0f8ff;
+  border-left: 4px solid #17a2b8;
+  padding: 15px 15px 15px 20px;
+  margin-top: 15px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #004085;
+}
+
+.timeline-box strong {
+  color: #004085;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.timeline-box ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.timeline-box li {
+  color: #004085;
+  margin-bottom: 6px;
+}
+
+.next-steps {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+
+.next-steps h2 {
+  font-size: 1.3rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.next-steps .checklist {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .page-intro h1 {
+    font-size: 1.5rem;
+  }
+
+  .doc-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .note-box,
+  .warning-box,
+  .timeline-box {
+    font-size: 0.9rem;
+    padding: 12px 12px 12px 15px;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <div class="header-brand">
+      <h1 class="site-title">Carolyn's Thailand Journey</h1>
+      <p class="site-subtitle">5-Year Destiny Visa & Long-Term Settlement Guide</p>
+    </div>
+  </div>
+</header><nav class="site-nav">
+  <ul class="nav-list">
+    <li><a href="/carolyn-5/" class="nav-link">Home</a></li>
+    <li><a href="/carolyn-5/pre-departure" class="nav-link">Pre-Departure</a></li>
+    <li><a href="/carolyn-5/travel-details" class="nav-link">Travel Details</a></li>
+    <li><a href="/carolyn-5/settling-in" class="nav-link">Settling In</a></li>
+    <li><a href="/carolyn-5/medical-planning" class="nav-link">Medical Planning</a></li>
+    <li><a href="/carolyn-5/visa-process" class="nav-link active">DTV Visa</a></li>
+    <li><a href="/carolyn-5/vietnam-trip" class="nav-link">Vietnam Trip</a></li>
+    <li><a href="/carolyn-5/dtv-application" class="nav-link">DTV Application</a></li>
+    <li><a href="/carolyn-5/return-thailand" class="nav-link">Return to Thailand</a></li>
+    <li><a href="/carolyn-5/deeper-settling" class="nav-link">Deeper Settling</a></li>
+    <li><a href="/carolyn-5/long-term-stay" class="nav-link">Long-Term Stay</a></li>
+    <li><a href="/carolyn-5/visa-extension" class="nav-link">Visa Extension</a></li>
+    <li><a href="/carolyn-5/resources" class="nav-link">Resources</a></li>
+    <li><a href="/carolyn-5/faq" class="nav-link">FAQ</a></li>
+  </ul>
+</nav><main class="container dtv-application-page">
+  <section class="page-intro">
+    <h1>DTV Application Document Compilation</h1>
+    <p class="lead">Complete guide to gathering and organizing all required documents for a successful Destiny Visa (DTV) application. All documents must be error-free—typos cause automatic rejection.</p>
+  </section>
+
+  <section class="document-sections">
+    <div class="doc-section">
+      <h2>Medical Documents Package</h2>
+      <p>The foundation of your DTV application. These must demonstrate 6+ months of ongoing medical treatment need.</p>
+      <ul class="checklist">
+        <li>Medical consultation letter from Thai doctor (Bangkok Hospital recommended)</li>
+        <li>Detailed medical treatment plan (6+ months minimum)</li>
+        <li>Proof of diagnosis (medical records from US)</li>
+        <li>Physical therapy or treatment schedule</li>
+        <li>Doctor's recommendation for Thailand-based treatment</li>
+        <li>Clinic contact information and stamp/seal</li>
+      </ul>
+      <div class="note-box">
+        <strong>Pro Tip:</strong> Bangkok Hospital Chiang Mai has proven track record for DTV medical letters. Schedule in-person consultation ($40-90) to build relationship with doctor.
+      </div>
+    </div>
+
+    <div class="doc-section">
+      <h2>Financial Sponsor Documents</h2>
+      <p>Your financial sponsor commits to covering emergency repatriation costs if needed.</p>
+      <ul class="checklist">
+        <li>Sponsor bank statements (3+ months showing 500,000+ THB / $15,000+ USD)</li>
+        <li>Sponsorship letter on official letterhead:
+          <ul class="sub-list">
+            <li>Commitment to financial support</li>
+            <li>Specific mention of emergency repatriation costs</li>
+            <li>Relationship to applicant</li>
+            <li>Sponsor signature and date</li>
+          </ul>
+        </li>
+        <li>Proof of relationship (birth certificate or equivalent)</li>
+        <li>Sponsor passport copy</li>
+      </ul>
+      <div class="warning-box">
+        <strong>Critical:</strong> Bank statements must clearly show the 500,000 THB balance maintained for entire 3+ month period. Recent deposits don't count—funds must be stable.
+      </div>
+    </div>
+
+    <div class="doc-section">
+      <h2>Personal Identity Documents</h2>
+      <ul class="checklist">
+        <li>Valid US passport (copy and original)</li>
+        <li>Passport bio page (clear color copy)</li>
+        <li>Passport signature page (copy)</li>
+        <li>Birth certificate (certified copy)</li>
+        <li>Emergency contact list:
+          <ul class="sub-list">
+            <li>US primary care doctor</li>
+            <li>US hospital</li>
+            <li>Financial sponsor (Jon)</li>
+            <li>US family members</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="doc-section">
+      <h2>Application Package Assembly</h2>
+      <p>Prepare documents in the following order:</p>
+      <ol class="assembly-order">
+        <li>Completed DTV online application form</li>
+        <li>Passport bio page</li>
+        <li>Medical consultation letter</li>
+        <li>Medical treatment plan</li>
+        <li>US medical records (surgeries, MRI, X-rays)</li>
+        <li>Sponsor bank statements (3+ pages showing 500,000+ THB)</li>
+        <li>Sponsorship letter</li>
+        <li>Birth certificate</li>
+        <li>Proof of relationship to sponsor</li>
+        <li>Emergency contact list</li>
+      </ol>
+      <div class="note-box">
+        <strong>Format:</strong> All documents should be scanned/photographed clearly, organized in PDF files with clear naming conventions.
+      </div>
+    </div>
+
+    <div class="doc-section">
+      <h2>Critical Quality Checklist</h2>
+      <p>Before submitting, verify:</p>
+      <ul class="quality-checks">
+        <li>✓ No spelling errors in any document</li>
+        <li>✓ Consistent name spelling across all documents</li>
+        <li>✓ All dates are clear and legible</li>
+        <li>✓ Signatures and stamps are visible</li>
+        <li>✓ Medical letterhead is clear with clinic contact info</li>
+        <li>✓ Bank statements show full name and account details</li>
+        <li>✓ All required elements included (no missing pages)</li>
+        <li>✓ Documents are in chronological order</li>
+        <li>✓ File sizes are reasonable for upload</li>
+        <li>✓ Colors are accurate (not over-darkened or faded)</li>
+      </ul>
+    </div>
+
+    <div class="doc-section">
+      <h2>Application Submission</h2>
+      <p>Submit online at <strong>thaievisa.go.th</strong></p>
+      <ul class="checklist">
+        <li>Submit within 24 hours of arrival in Vietnam</li>
+        <li>Non-refundable application fee: $340</li>
+        <li>Online-only applications (as of October 2024)</li>
+        <li>Hanoi and Ho Chi Minh City have very high approval rates</li>
+      </ul>
+      <div class="timeline-box">
+        <strong>Processing Timeline:</strong>
+        <ul>
+          <li><strong>Official:</strong> 5 working days</li>
+          <li><strong>Realistic:</strong> 2 days to 2 weeks</li>
+          <li>Cannot return to Thailand during processing—must stay in Vietnam</li>
+          <li>Approval arrives via email; print multiple copies immediately</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="next-steps">
+    <h2>After DTV Approval</h2>
+    <ul class="checklist">
+      <li>Print multiple copies of DTV approval email</li>
+      <li>Fly back to Chiang Mai with printed approval</li>
+      <li>Present DTV approval at Thailand border</li>
+      <li>Entry stamp valid for 5 years with 180-day stays</li>
+      <li>No re-entry permits needed for entire 5-year period</li>
+    </ul>
+  </section>
+</main><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <p>&copy; 2025 Carolyn's Thailand Journey. Information compiled for personal reference and educational purposes.</p>
+      <p class="footer-note">Last updated: October 29, 2025</p>
+    </div>
+  </div>
+</footer></body></html>
