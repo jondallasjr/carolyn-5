@@ -1,0 +1,845 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Settling In: First 3 Weeks in Chiang Mai</title><style>/* Global CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+li {
+  margin: 8px 0;
+}
+
+p {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.site-header {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  padding: 30px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-brand {
+  text-align: center;
+}
+
+.site-title {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.site-subtitle {
+  font-size: 1rem;
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+/* Navigation Styles */
+.site-nav {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.nav-link {
+  display: block;
+  padding: 12px 16px;
+  color: #333;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+  border-bottom-color: #007bff;
+}
+
+.nav-link.active {
+  color: #007bff;
+  border-bottom-color: #007bff;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  margin-top: 60px;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.footer-content p {
+  margin: 8px 0;
+}
+
+.footer-note {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* Container utility */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 1.5rem;
+  }
+
+  .site-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-link {
+    border-bottom: 1px solid #dee2e6;
+    border-left: 3px solid transparent;
+    padding: 12px 20px;
+  }
+
+  .nav-link.active {
+    border-left-color: #007bff;
+    border-bottom-color: #dee2e6;
+  }
+}
+/* Settling In: First 3 Weeks in Chiang Mai - Page CSS */
+.page-hero {
+  background: linear-gradient(135deg, #e8f4f8 0%, #f0f8ff 100%);
+  padding: 40px 20px;
+  margin: -20px -20px 40px -20px;
+  border-bottom: 3px solid #007bff;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  color: #0056b3;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.page-hero .lead {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0;
+}
+
+.timeline-section {
+  margin: 50px 0;
+}
+
+.timeline-section h2 {
+  font-size: 1.8rem;
+  color: #0056b3;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.timeline-card {
+  background: #f9f9f9;
+  border-left: 4px solid #007bff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.timeline-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.timeline-date {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.timeline-card h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 10px 0 15px 0;
+}
+
+.timeline-card ul {
+  margin: 15px 0;
+  padding-left: 25px;
+}
+
+.timeline-card li {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.info-box {
+  background-color: #e8f4f8;
+  border-left: 3px solid #0056b3;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.info-box strong {
+  color: #0056b3;
+}
+
+.local-info-section {
+  margin: 50px 0;
+}
+
+.local-info-section h2 {
+  font-size: 1.8rem;
+  color: #0056b3;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.info-card {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 25px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  border-color: #007bff;
+  transform: translateY(-2px);
+}
+
+.info-card h3 {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-card li {
+  margin: 12px 0;
+  padding-left: 0;
+  line-height: 1.5;
+}
+
+.info-card strong {
+  color: #0056b3;
+}
+
+.key-contacts-section {
+  margin: 50px 0;
+}
+
+.key-contacts-section h2 {
+  font-size: 1.8rem;
+  color: #0056b3;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.contacts-box {
+  background: linear-gradient(135deg, #f0f8ff 0%, #f9f9f9 100%);
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.contact-item {
+  padding: 15px 0;
+}
+
+.contact-item h4 {
+  font-size: 1.1rem;
+  color: #0056b3;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.contact-item p {
+  margin: 8px 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+.next-steps-section {
+  background: #f0f8ff;
+  border-left: 4px solid #007bff;
+  padding: 30px;
+  margin: 50px 0;
+  border-radius: 6px;
+}
+
+.next-steps-section h2 {
+  font-size: 1.6rem;
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.next-steps-section ul {
+  margin: 20px 0;
+}
+
+.next-steps-section li {
+  margin: 12px 0;
+  line-height: 1.7;
+}
+
+.tips-section {
+  margin: 50px 0;
+  padding-bottom: 40px;
+}
+
+.tips-section h2 {
+  font-size: 1.8rem;
+  color: #0056b3;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.tips-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tips-list li {
+  background: white;
+  border-left: 4px solid #28a745;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  line-height: 1.6;
+}
+
+.tips-list li:before {
+  content: "✓ ";
+  color: #28a745;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .page-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .page-hero .lead {
+    font-size: 1rem;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts-box {
+    grid-template-columns: 1fr;
+  }
+}.page-hero {
+  background: linear-gradient(135deg, #e8f4f8 0%, #f0f8ff 100%);
+  padding: 40px 20px;
+  margin: -20px -20px 40px -20px;
+  border-bottom: 3px solid #007bff;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  color: #0056b3;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.page-hero .lead {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0;
+}
+
+.timeline-section {
+  margin: 50px 0;
+}
+
+.timeline-section h2 {
+  font-size: 1.8rem;
+  color: #0056b3;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.timeline-card {
+  background: #f9f9f9;
+  border-left: 4px solid #007bff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.timeline-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.timeline-date {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.timeline-card h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 10px 0 15px 0;
+}
+
+.timeline-card ul {
+  margin: 15px 0;
+  padding-left: 25px;
+}
+
+.timeline-card li {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.info-box {
+  background-color: #e8f4f8;
+  border-left: 3px solid #0056b3;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.info-box strong {
+  color: #0056b3;
+}
+
+.local-info-section {
+  margin: 50px 0;
+}
+
+.local-info-section h2 {
+  font-size: 1.8rem;
+  color: #0056b3;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.info-card {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 25px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  border-color: #007bff;
+  transform: translateY(-2px);
+}
+
+.info-card h3 {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-card li {
+  margin: 12px 0;
+  padding-left: 0;
+  line-height: 1.5;
+}
+
+.info-card strong {
+  color: #0056b3;
+}
+
+.key-contacts-section {
+  margin: 50px 0;
+}
+
+.key-contacts-section h2 {
+  font-size: 1.8rem;
+  color: #0056b3;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.contacts-box {
+  background: linear-gradient(135deg, #f0f8ff 0%, #f9f9f9 100%);
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.contact-item {
+  padding: 15px 0;
+}
+
+.contact-item h4 {
+  font-size: 1.1rem;
+  color: #0056b3;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.contact-item p {
+  margin: 8px 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+.next-steps-section {
+  background: #f0f8ff;
+  border-left: 4px solid #007bff;
+  padding: 30px;
+  margin: 50px 0;
+  border-radius: 6px;
+}
+
+.next-steps-section h2 {
+  font-size: 1.6rem;
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.next-steps-section ul {
+  margin: 20px 0;
+}
+
+.next-steps-section li {
+  margin: 12px 0;
+  line-height: 1.7;
+}
+
+.tips-section {
+  margin: 50px 0;
+  padding-bottom: 40px;
+}
+
+.tips-section h2 {
+  font-size: 1.8rem;
+  color: #0056b3;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.tips-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tips-list li {
+  background: white;
+  border-left: 4px solid #28a745;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  line-height: 1.6;
+}
+
+.tips-list li:before {
+  content: "✓ ";
+  color: #28a745;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .page-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .page-hero .lead {
+    font-size: 1rem;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts-box {
+    grid-template-columns: 1fr;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <div class="header-brand">
+      <h1 class="site-title">Carolyn's Thailand Journey</h1>
+      <p class="site-subtitle">5-Year Destiny Visa & Long-Term Settlement Guide</p>
+    </div>
+  </div>
+</header><nav class="site-nav">
+  <ul class="nav-list">
+    <li><a href="/carolyn-5/" class="nav-link">Home</a></li>
+    <li><a href="/carolyn-5/pre-departure" class="nav-link">Pre-Departure</a></li>
+    <li><a href="/carolyn-5/travel-details" class="nav-link">Travel Details</a></li>
+    <li><a href="/carolyn-5/settling-in" class="nav-link">Settling In</a></li>
+    <li><a href="/carolyn-5/medical-planning" class="nav-link">Medical Planning</a></li>
+    <li><a href="/carolyn-5/visa-process" class="nav-link active">DTV Visa</a></li>
+    <li><a href="/carolyn-5/vietnam-trip" class="nav-link">Vietnam Trip</a></li>
+    <li><a href="/carolyn-5/dtv-application" class="nav-link">DTV Application</a></li>
+    <li><a href="/carolyn-5/return-thailand" class="nav-link">Return to Thailand</a></li>
+    <li><a href="/carolyn-5/deeper-settling" class="nav-link">Deeper Settling</a></li>
+    <li><a href="/carolyn-5/long-term-stay" class="nav-link">Long-Term Stay</a></li>
+    <li><a href="/carolyn-5/visa-extension" class="nav-link">Visa Extension</a></li>
+    <li><a href="/carolyn-5/resources" class="nav-link">Resources</a></li>
+    <li><a href="/carolyn-5/faq" class="nav-link">FAQ</a></li>
+  </ul>
+</nav><main class="container">
+  <section class="page-hero">
+    <h1>Settling In: First 3 Weeks in Chiang Mai</h1>
+    <p class="lead">Essential setup for basic services, recovery community integration, and local navigation</p>
+  </section>
+
+  <section class="timeline-section">
+    <h2>Timeline: August 26 - September 16</h2>
+    <div class="timeline-card">
+      <div class="timeline-date">Aug 26 - Aug 29</div>
+      <h3>First 3 Quiet Days to Settle</h3>
+      <ul>
+        <li>Go to nearby grocery store</li>
+        <li>Download and set up Grab app for transportation</li>
+      </ul>
+      <div class="info-box">
+        <strong>Info:</strong> Grab Taxis & Motorbikes are very inexpensive to travel around Chiang Mai
+      </div>
+    </div>
+
+    <div class="timeline-card">
+      <div class="timeline-date">Aug 26 - Sep 16</div>
+      <h3>Set Up Basic Services</h3>
+      <ul>
+        <li>Hire a cleaner (500-800 THB / $15-24 for 2-3 hours)</li>
+        <li>Find primary care doctor (recommended: Dr. Morgan at Health Care Medical Clinic)</li>
+        <li>Arrange physical therapist</li>
+        <li>Locate nearby pharmacy</li>
+      </ul>
+    </div>
+
+    <div class="timeline-card">
+      <div class="timeline-date">Aug 26 - Sep 16</div>
+      <h3>Connect with Recovery Community</h3>
+      <ul>
+        <li>Attend nearby AA meetings (50+ per week in Chiang Mai)</li>
+        <li>Explore Buddhist recovery/Refuge Recovery meetings</li>
+        <li>Find sponsor</li>
+        <li>Research addiction counseling options (Counselling Thailand, The Cabin alumni network)</li>
+      </ul>
+      <div class="info-box">
+        <strong>Info:</strong> Chiang Mai has an active recovery community with many Western-style restaurants and social options
+      </div>
+    </div>
+  </section>
+
+  <section class="local-info-section">
+    <h2>Local Information & Resources</h2>
+    
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Getting Around</h3>
+        <ul>
+          <li><strong>Grab App:</strong> Taxis and motorbikes, very affordable</li>
+          <li><strong>ATM Fees:</strong> 220 THB ($6.50) per withdrawal</li>
+          <li><strong>Taxis & Motorbikes:</strong> Inexpensive throughout Chiang Mai</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3>Housing & Costs</h3>
+        <ul>
+          <li><strong>Suthep Area:</strong> $250-500/month</li>
+          <li><strong>Cleaning Services:</strong> 500-800 THB ($15-24) for 2-3 hours</li>
+          <li><strong>Medical Consultation:</strong> $40-90</li>
+          <li><strong>Physical Therapy:</strong> $25-75/session (vs $100+ in US)</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3>Amenities in Suthep Area</h3>
+        <ul>
+          <li>Convenience stores</li>
+          <li>Grocery stores</li>
+          <li>Restaurants (many Western-style)</li>
+          <li>AA Meetings & recovery support</li>
+          <li>Counseling centers & art therapy</li>
+          <li>Gyms and swimming pools</li>
+          <li>Physical therapists</li>
+          <li>24/7 English-speaking medical facilities</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="key-contacts-section">
+    <h2>Key Contacts & Services</h2>
+    <div class="contacts-box">
+      <div class="contact-item">
+        <h4>Primary Care</h4>
+        <p><strong>Recommended:</strong> Dr. Morgan at Health Care Medical Clinic</p>
+        <p>Schedule early in your stay to establish relationship</p>
+      </div>
+      <div class="contact-item">
+        <h4>Recovery Support</h4>
+        <p>50+ AA meetings per week in Chiang Mai</p>
+        <p>Buddhist recovery and Refuge Recovery meetings available</p>
+        <p>Consider: Counselling Thailand, The Cabin alumni network</p>
+      </div>
+      <div class="contact-item">
+        <h4>Expat Community</h4>
+        <p>Join Chiang Mai Expats Facebook groups</p>
+        <p>Suthep area has large expat community with English-speaking services</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="next-steps-section">
+    <h2>What's Next</h2>
+    <p>After completing this 3-week settling-in period, you'll move into:</p>
+    <ul>
+      <li><strong>Medical Planning Phase:</strong> Schedule consultation with Bangkok Hospital to develop 6+ month medical plan (required for DTV visa)</li>
+      <li><strong>Deeper Settling In:</strong> Join community groups (yoga, hiking, art, cooking, etc.), explore volunteering opportunities, and begin learning Thai language</li>
+      <li><strong>DTV Application Preparation:</strong> Compile necessary documents and prepare for visa application</li>
+    </ul>
+  </section>
+
+  <section class="tips-section">
+    <h2>Pro Tips for Success</h2>
+    <ul class="tips-list">
+      <li>Take it slow your first few days - jet lag and adjustment are real</li>
+      <li>Prioritize finding your recovery community early - it's crucial for ongoing support</li>
+      <li>Establish relationship with primary care doctor as foundation for future medical planning</li>
+      <li>Download Grab app immediately for reliable, affordable transportation</li>
+      <li>Connect with expat groups to learn local navigation and resources</li>
+      <li>Many Western-style restaurants available if needed during adjustment period</li>
+    </ul>
+  </section>
+</main><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <p>&copy; 2025 Carolyn's Thailand Journey. Information compiled for personal reference and educational purposes.</p>
+      <p class="footer-note">Last updated: October 29, 2025</p>
+    </div>
+  </div>
+</footer></body></html>
