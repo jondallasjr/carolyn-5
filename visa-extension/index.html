@@ -1,0 +1,611 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Tourist Visa Extension (Optional 30-Day)</title><style>/* Global CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+li {
+  margin: 8px 0;
+}
+
+p {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.site-header {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  padding: 30px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-brand {
+  text-align: center;
+}
+
+.site-title {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.site-subtitle {
+  font-size: 1rem;
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+/* Navigation Styles */
+.site-nav {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.nav-link {
+  display: block;
+  padding: 12px 16px;
+  color: #333;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+  border-bottom-color: #007bff;
+}
+
+.nav-link.active {
+  color: #007bff;
+  border-bottom-color: #007bff;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  margin-top: 60px;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.footer-content p {
+  margin: 8px 0;
+}
+
+.footer-note {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* Container utility */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 1.5rem;
+  }
+
+  .site-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-link {
+    border-bottom: 1px solid #dee2e6;
+    border-left: 3px solid transparent;
+    padding: 12px 20px;
+  }
+
+  .nav-link.active {
+    border-left-color: #007bff;
+    border-bottom-color: #dee2e6;
+  }
+}
+/* Tourist Visa Extension (Optional 30-Day) - Page CSS */
+.page-header {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.page-header h1 {
+  font-size: 2.2rem;
+  color: #007bff;
+  margin-bottom: 12px;
+}
+
+.page-intro {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+.timeline-section {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  border-left: 4px solid #007bff;
+}
+
+.timeline-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.timeline-item {
+  padding: 20px;
+  background: white;
+  border-radius: 6px;
+  border-left: 3px solid #28a745;
+}
+
+.timeline-date {
+  font-weight: 600;
+  color: #28a745;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.timeline-item h3 {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.info-section,
+.instructions-section,
+.details-section,
+.important-notes,
+.next-steps {
+  margin-bottom: 40px;
+}
+
+.info-section h2,
+.instructions-section h2,
+.details-section h2,
+.important-notes h2,
+.next-steps h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.instruction-card {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 16px;
+  transition: box-shadow 0.3s ease;
+}
+
+.instruction-card:hover {
+  box-shadow: 0 4px 12px rgba(0,123,255,0.15);
+}
+
+.instruction-card h3 {
+  color: #007bff;
+  margin-bottom: 12px;
+  font-size: 1.15rem;
+}
+
+.instruction-card ul {
+  margin: 12px 0;
+  padding-left: 20px;
+}
+
+.instruction-card li {
+  margin: 6px 0;
+}
+
+.detail-box {
+  background-color: #e7f3ff;
+  border-left: 4px solid #007bff;
+  padding: 20px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.detail-box h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+.detail-box p {
+  margin: 0;
+  color: #333;
+}
+
+.notes-list {
+  padding-left: 20px;
+}
+
+.notes-list li {
+  margin: 12px 0;
+  line-height: 1.7;
+}
+
+.notes-list strong {
+  color: #007bff;
+}
+
+.steps-list {
+  padding-left: 20px;
+}
+
+.steps-list li {
+  margin: 14px 0;
+  line-height: 1.7;
+}
+
+.steps-list strong {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .instruction-card,
+  .detail-box {
+    padding: 16px;
+  }
+
+  .info-section h2,
+  .instructions-section h2,
+  .details-section h2,
+  .important-notes h2,
+  .next-steps h2 {
+    font-size: 1.4rem;
+  }
+}.page-header {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.page-header h1 {
+  font-size: 2.2rem;
+  color: #007bff;
+  margin-bottom: 12px;
+}
+
+.page-intro {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+.timeline-section {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  border-left: 4px solid #007bff;
+}
+
+.timeline-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.timeline-item {
+  padding: 20px;
+  background: white;
+  border-radius: 6px;
+  border-left: 3px solid #28a745;
+}
+
+.timeline-date {
+  font-weight: 600;
+  color: #28a745;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.timeline-item h3 {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.info-section,
+.instructions-section,
+.details-section,
+.important-notes,
+.next-steps {
+  margin-bottom: 40px;
+}
+
+.info-section h2,
+.instructions-section h2,
+.details-section h2,
+.important-notes h2,
+.next-steps h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.instruction-card {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 16px;
+  transition: box-shadow 0.3s ease;
+}
+
+.instruction-card:hover {
+  box-shadow: 0 4px 12px rgba(0,123,255,0.15);
+}
+
+.instruction-card h3 {
+  color: #007bff;
+  margin-bottom: 12px;
+  font-size: 1.15rem;
+}
+
+.instruction-card ul {
+  margin: 12px 0;
+  padding-left: 20px;
+}
+
+.instruction-card li {
+  margin: 6px 0;
+}
+
+.detail-box {
+  background-color: #e7f3ff;
+  border-left: 4px solid #007bff;
+  padding: 20px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.detail-box h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+.detail-box p {
+  margin: 0;
+  color: #333;
+}
+
+.notes-list {
+  padding-left: 20px;
+}
+
+.notes-list li {
+  margin: 12px 0;
+  line-height: 1.7;
+}
+
+.notes-list strong {
+  color: #007bff;
+}
+
+.steps-list {
+  padding-left: 20px;
+}
+
+.steps-list li {
+  margin: 14px 0;
+  line-height: 1.7;
+}
+
+.steps-list strong {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .instruction-card,
+  .detail-box {
+    padding: 16px;
+  }
+
+  .info-section h2,
+  .instructions-section h2,
+  .details-section h2,
+  .important-notes h2,
+  .next-steps h2 {
+    font-size: 1.4rem;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <div class="header-brand">
+      <h1 class="site-title">Carolyn's Thailand Journey</h1>
+      <p class="site-subtitle">5-Year Destiny Visa & Long-Term Settlement Guide</p>
+    </div>
+  </div>
+</header><nav class="site-nav">
+  <ul class="nav-list">
+    <li><a href="/carolyn-5/" class="nav-link">Home</a></li>
+    <li><a href="/carolyn-5/pre-departure" class="nav-link">Pre-Departure</a></li>
+    <li><a href="/carolyn-5/travel-details" class="nav-link">Travel Details</a></li>
+    <li><a href="/carolyn-5/settling-in" class="nav-link">Settling In</a></li>
+    <li><a href="/carolyn-5/medical-planning" class="nav-link">Medical Planning</a></li>
+    <li><a href="/carolyn-5/visa-process" class="nav-link active">DTV Visa</a></li>
+    <li><a href="/carolyn-5/vietnam-trip" class="nav-link">Vietnam Trip</a></li>
+    <li><a href="/carolyn-5/dtv-application" class="nav-link">DTV Application</a></li>
+    <li><a href="/carolyn-5/return-thailand" class="nav-link">Return to Thailand</a></li>
+    <li><a href="/carolyn-5/deeper-settling" class="nav-link">Deeper Settling</a></li>
+    <li><a href="/carolyn-5/long-term-stay" class="nav-link">Long-Term Stay</a></li>
+    <li><a href="/carolyn-5/visa-extension" class="nav-link">Visa Extension</a></li>
+    <li><a href="/carolyn-5/resources" class="nav-link">Resources</a></li>
+    <li><a href="/carolyn-5/faq" class="nav-link">FAQ</a></li>
+  </ul>
+</nav><main class="container">
+  <section class="page-header">
+    <h1>Tourist Visa Extension (Optional 30-Day)</h1>
+    <p class="page-intro">Extend your initial 60-day visa exemption to 90 days total, providing extra time before DTV application.</p>
+  </section>
+
+  <section class="timeline-section">
+    <h2>Timeline</h2>
+    <div class="timeline-item">
+      <div class="timeline-date">October 19-20, 2025</div>
+      <h3>Apply for 30-Day Tourist Extension</h3>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <h2>Overview</h2>
+    <p>This optional extension provides an additional 30 days in Thailand, bringing your total tourist stay from 60 days to 90 days. This gives you extra time to:</p>
+    <ul>
+      <li>Complete medical consultations and build relationships with Thai healthcare providers</li>
+      <li>Finalize DTV application documents without rushing</li>
+      <li>Ensure all medical records and letters are properly prepared</li>
+      <li>Coordinate with your financial sponsor on required documentation</li>
+    </ul>
+  </section>
+
+  <section class="instructions-section">
+    <h2>How to Apply</h2>
+    <div class="instruction-card">
+      <h3>Step 1: Visit Immigration Office</h3>
+      <p>Go to the Chiang Mai Immigration Office during business hours. The office is located in central Chiang Mai.</p>
+    </div>
+    <div class="instruction-card">
+      <h3>Step 2: Prepare Documents</h3>
+      <ul>
+        <li>Passport (original)</li>
+        <li>TM.7 form (available at immigration office)</li>
+        <li>One passport-sized photo (4x6 cm)</li>
+        <li>Copy of passport information page</li>
+      </ul>
+    </div>
+    <div class="instruction-card">
+      <h3>Step 3: Pay Fee</h3>
+      <p><strong>Cost: 1,900 THB</strong> (approximately $55-60 USD)</p>
+      <p>Payment made directly at the immigration office.</p>
+    </div>
+    <div class="instruction-card">
+      <h3>Step 4: Processing</h3>
+      <p><strong>Processing Time: Same day</strong></p>
+      <p>Extensions are typically processed the same day you apply. You'll leave with your extended tourist stamp.</p>
+    </div>
+  </section>
+
+  <section class="details-section">
+    <h2>Key Details</h2>
+    <div class="detail-box">
+      <h3>New Expiration Date</h3>
+      <p>Your tourist visa will be extended by exactly 30 days from your current expiration date. If you arrived August 25 on the 60-day exemption (expiring October 24), your extension brings it to approximately November 23.</p>
+    </div>
+    <div class="detail-box">
+      <h3>Total Stay Duration</h3>
+      <p>90 days total (60-day initial exemption + 30-day extension)</p>
+    </div>
+    <div class="detail-box">
+      <h3>Why This Matters for DTV</h3>
+      <p>The extra 30 days ensures you have sufficient time to complete your DTV application process, including the trip to Vietnam for submission and approval (typically 2-5 working days, but can take up to 2 weeks).</p>
+    </div>
+  </section>
+
+  <section class="important-notes">
+    <h2>Important Notes</h2>
+    <ul class="notes-list">
+      <li><strong>Optional:</strong> This extension is not required, but highly recommended to avoid rushing the DTV process</li>
+      <li><strong>Single Entry Only:</strong> This extension only applies to your current stay. You cannot leave and re-enter Thailand during this extension period</li>
+      <li><strong>Timing:</strong> Apply for the extension near the end of your 60-day period, typically 2-3 weeks before expiration</li>
+      <li><strong>No Return Visits:</strong> If you travel to Vietnam for DTV application during this extension, you cannot return to Thailand. This is why DTV is applied for while on tourist visa status</li>
+      <li><strong>Future Entry:</strong> After receiving your 5-year DTV, you won't need tourist extensions anymore</li>
+    </ul>
+  </section>
+
+  <section class="next-steps">
+    <h2>Next Steps</h2>
+    <ol class="steps-list">
+      <li><strong>Complete Medical Planning</strong> - Ensure your medical consultation and plan are finalized (see Medical Planning section)</li>
+      <li><strong>Prepare DTV Documents</strong> - Begin compiling all required documents for DTV application</li>
+      <li><strong>Coordinate with Sponsor</strong> - Work with your financial sponsor on their required documentation</li>
+      <li><strong>Plan Vietnam Trip</strong> - Once extension is approved, plan your Vietnam trip for DTV submission (see Vietnam Trip section)</li>
+    </ol>
+  </section>
+</main><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <p>&copy; 2025 Carolyn's Thailand Journey. Information compiled for personal reference and educational purposes.</p>
+      <p class="footer-note">Last updated: October 29, 2025</p>
+    </div>
+  </div>
+</footer></body></html>
